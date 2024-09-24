@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>도서 상세 보기</title>
+  <link rel="stylesheet" href="my.css">
+</head>
+<body>
+<header>
+  <h1>도서 상세 보기</h1>
+</header>
+
+<section id="book-details">
+  <p><strong>제목:</strong> <span id="book-title">책 제목 1</span></p>
+  <p><strong>저자:</strong> <span id="book-author">저자 1</span></p>
+  <p><strong>출판연도:</strong> <span id="book-year">2021</span></p>
+  <p><strong>ISBN:</strong> <span id="book-isbn">1234567890</span></p>
+</section>
+
+<button onclick="location.href='add.html'">[추가]</button>
+<button onclick="location.href='edit.html'">[수정]</button>
+<button onclick="confirmDelete()">[삭제]</button>
+<button onclick="location.href='index.html'">[목록]</button>
+
+<script>
+  function confirmDelete() {
+    const confirmation = confirm("게시물을 삭제할까요?");
+    if (confirmation) {
+      alert("게시물이 삭제되었습니다.");
+      location.href = 'index.html';
+    }
+  }
+</script>
+</body>
+</html>

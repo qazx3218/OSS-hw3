@@ -1,0 +1,107 @@
+/* Global Styles for all devices */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+form, table {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 600px) {
+  form, table {
+    width: 95%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  input, button {
+    font-size: 1em;
+  }
+
+  /* Stack table cells vertically on small screens */
+  table, th, td {
+    display: block;
+    width: 100%;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  th {
+    background-color: #ddd;
+  }
+
+  tr {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 601px) {
+  form, table {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  button {
+    width: auto;
+    padding: 10px 20px;
+  }
+}
